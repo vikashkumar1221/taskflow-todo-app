@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Smart Todo App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1><i class="fa-solid fa-list-check"></i> TaskFlow</h1>
+
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <input type="text"
+        id="searchTask"
+        placeholder="Search Task...">
+
+    </div>
+
+
+    <!-- Add Task -->
+
+    <div class="task-box">
+
+        <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter Task">
+
+        <select id="priority">
+
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+
+        </select>
+
+        <input
+        type="date"
+        id="dueDate">
+
+        <button id="addBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add
+
+        </button>
+
+    </div>
+
+
+    <!-- Filter -->
+
+    <div class="filter">
+
+        <button id="allBtn">All</button>
+
+        <button id="pendingBtn">
+            Pending
+        </button>
+
+        <button id="completedBtn">
+            Completed
+        </button>
+
+    </div>
+
+
+    <!-- Task List -->
+
+    <ul id="taskList">
+
+    </ul>
+
+
+    <!-- Statistics -->
+
+    <div class="stats">
+
+        <div class="card">
+
+            <h3>Total</h3>
+
+            <p id="totalTask">0</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Completed</h3>
+
+            <p id="completedTask">0</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Pending</h3>
+
+            <p id="pendingTask">0</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Progress -->
+
+    <div class="progress">
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>TaskFlow © 2026</p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
